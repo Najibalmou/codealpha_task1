@@ -1,0 +1,246 @@
+/* Styles pour les pages d'authentification */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    background-color: #f1f5f9;
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 28rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-title {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #1e293b;
+  }
+  
+  .auth-subtitle {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  
+  .auth-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 0;
+  }
+  
+  .form-label-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+  }
+  
+  .forgot-password {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4f46e5;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #94a3b8;
+  }
+  
+  .input-with-icon {
+    padding-left: 2.5rem;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+  }
+  
+  .password-toggle:hover {
+    color: #64748b;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    accent-color: #4f46e5;
+  }
+  
+  .checkbox-label {
+    font-size: 0.875rem;
+    color: #1e293b;
+  }
+  
+  .password-strength {
+    margin-top: 0.5rem;
+  }
+  
+  .password-strength-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .password-strength-text {
+    color: #64748b;
+  }
+  
+  .password-strength-value {
+    font-weight: 500;
+  }
+  
+  .password-strength-value.weak {
+    color: #ef4444;
+  }
+  
+  .password-strength-value.medium {
+    color: #f59e0b;
+  }
+  
+  .password-strength-value.strong {
+    color: #16a34a;
+  }
+  
+  .password-strength-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .password-strength-progress {
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+  }
+  
+  .password-strength-progress.weak {
+    background-color: #ef4444;
+  }
+  
+  .password-strength-progress.medium {
+    background-color: #f59e0b;
+  }
+  
+  .password-strength-progress.strong {
+    background-color: #16a34a;
+  }
+  
+  .auth-divider {
+    position: relative;
+    margin: 1.5rem 0;
+  }
+  
+  .auth-divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e2e8f0;
+  }
+  
+  .auth-divider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  
+  .social-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1e293b;
+    transition: all 0.2s ease;
+  }
+  
+  .social-button:hover {
+    background-color: #f8fafc;
+  }
+  
+  .social-button-google .social-icon {
+    color: #ea4335;
+  }
+  
+  .social-button-facebook .social-icon {
+    color: #1877f2;
+  }
+  
+  .auth-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  
+  .auth-link {
+    font-weight: 500;
+    color: #4f46e5;
+    text-decoration: none;
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+  
+  
